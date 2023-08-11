@@ -1,11 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Unbounded } from "next/font/google";
 import Navbar from "./_components/Navbar";
 
-const inter = Inter({
+const unbounded = Unbounded({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-unbounded",
 });
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${montserrat.variable}`}>
+      <body className={`${unbounded.variable} ${montserrat.variable}`}>
         <Navbar>{children}</Navbar>
       </body>
     </html>

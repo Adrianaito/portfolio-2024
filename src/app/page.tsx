@@ -11,7 +11,7 @@ export default function Home() {
           initial={{ height: 0, opacity: 0 }}
           animate={{ opacity: 1, height: "100%" }}
           transition={{ duration: 1, easy: "easeIn", delay: 0.5 }}
-          className="flex flex-row justify-between items-center w-full h-full "
+          className="flex flex-row justify-between items-center w-full h-full px-20"
         >
           <div className="pl-24 font-montserrat">
             <div>
@@ -24,22 +24,19 @@ export default function Home() {
               <p>at Matinno</p>
             </div>
           </div>
-          <div className="pr-24 ">
-            <Link
-              href="/"
-              className="text-4xl font-sans  font-bold text-center"
-            >
-              <p className="text-6xl hover:text-7xl text-center lg:text-right lg:text-9xl lg:hover:text-[8.5rem]">
+          <div className="pr-24">
+            <Link href="/" className="font-sans font-bold">
+              <p className="text-6xl hover:italic text-left lg:text-9xl pb-10">
                 Work
               </p>
             </Link>
-            <Link href="/" className="text-4xl font-bold text-center">
-              <p className="text-6xl text-center lg:text-right lg:text-9xl lg:hover:text-[8.5rem]">
+            <Link href="/" className="font-sans font-bold">
+              <p className="text-6xl hover:italic text-left lg:text-9xl pb-10">
                 About
               </p>
             </Link>
-            <Link href="/contact" className="text-4xl font-bold text-center">
-              <p className="text-6xl text-center lg:text-right lg:text-9xl lg:hover:text-[8.5rem]">
+            <Link href="/contact" className="font-sans font-bold">
+              <p className="text-6xl hover:italic text-left lg:text-9xl pb-10">
                 Contact
               </p>
             </Link>

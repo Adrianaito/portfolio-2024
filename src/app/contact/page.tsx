@@ -15,7 +15,7 @@ export default function Contact() {
           animate={{ y: 0 }}
           initial={{ y: "100%" }}
           transition={{ duration: 0.5, easy: "easeOut", delay: 0.75 }}
-          className="text-6xl text-center lg:text-right lg:text-9xl"
+          className="text-6xl font-sans text-center lg:text-right lg:text-9xl"
         >
           Let&apos;s talk!
         </m.h1>
@@ -23,7 +23,10 @@ export default function Contact() {
       <div className="flex flex-col gap-2 pl-24 font-montserrat">
         <div className="lg-text-2xl text-base">
           <h4>
-            Email:<span className="pl-2">ito.dri@gmail.com</span>
+            Email:
+            <a href="mailto:ito.dri@gmail.com" className="pl-2 hover:underline">
+              ito.dri@gmail.com
+            </a>
           </h4>
         </div>
         <div className="lg-text-2xl text-base">
