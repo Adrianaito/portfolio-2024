@@ -43,20 +43,20 @@ export default function Home() {
             <div className="lg:flex lg:justify-between lg:gap-14">
               <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
                 <div className="w-2/3">
-                  <h1 className="text-4xl tracking-wider font-main-title text-slate-300 uppercase pb-4 font-bold">
+                  <h1 className="text-4xl tracking-wider font-main-title text-main-title uppercase pb-4 font-bold">
                     Adriana Ito
                   </h1>
-                  <p className="text-lg pb-3 text-slate-300 font-common">
+                  <p className="text-lg pb-3 text-main-title font-common">
                     Fullstack Web Developer
                   </p>
-                  <p className="text-lg text-slate-500 font-common">
+                  <p className="text-lg text-content-1 font-common">
                     Currently developing full-time for
                   </p>
-                  <p className="text-lg text-slate-500">
+                  <p className="text-lg text-content-1">
                     <a
                       href="https://www.matinno.co/"
                       target="_blank"
-                      className="hover:underline text-teal-300 hover:text-white font-common"
+                      className="hover:underline text-link-hover hover:text-white font-common"
                     >
                       Matinno.
                     </a>{" "}
@@ -71,10 +71,10 @@ export default function Home() {
               >
                 <section
                   id="about"
-                  className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-slate-500"
+                  className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-content-1"
                 >
-                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                    <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                    <h2 className="text-sm font-bold uppercase tracking-widest text-link lg:sr-only">
                       About
                     </h2>
                   </div>
@@ -90,8 +90,8 @@ export default function Home() {
                   id="experience"
                   className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                 >
-                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                    <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                    <h2 className="text-sm font-bold uppercase tracking-widest text-link lg:sr-only">
                       Experience
                     </h2>
                   </div>
@@ -104,15 +104,15 @@ export default function Home() {
                     title="Download Full Resume"
                     link="/Adriana Ito resume.pdf"
                     icon={<Download size={16} />}
-                    className="font-common underline hover:no-underline lg:group-hover/link-bottom:text-teal-300"
+                    className="font-common underline hover:no-underline lg:group-hover/link-bottom:text-link-hover"
                   />
                 </section>
                 <section
                   id="projects"
                   className="section-projects h-[1000px]mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                 >
-                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                    <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                    <h2 className="text-sm font-bold uppercase tracking-widest text-link lg:sr-only">
                       Projects
                     </h2>
                   </div>

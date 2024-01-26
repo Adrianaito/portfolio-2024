@@ -33,7 +33,8 @@ export function CardRoot({ children }: CardRootProps) {
             "motion-reduce:transition-none",
             "lg:-inset-x-6",
             "lg:block",
-            "lg:group-hover/root:bg-slate-800/50",
+            // "lg:group-hover/root:bg-slate-800/50",
+            "lg:group-hover/root:bg-background-secondary/30",
             "lg:group-hover/root:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]",
             "lg:group-hover/root:drop-shadow-lg"
           )}

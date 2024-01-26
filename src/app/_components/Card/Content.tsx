@@ -19,14 +19,14 @@ export function Content({ children, subtitle, title, link }: ContentProps) {
         "items-baseline",
         "font-common",
         "leading-tight",
-        "text-slate-200",
-        "lg:group-hover/root:text-teal-300",
+        "text-link",
+        "lg:group-hover/root:text-link-hover",
         "group/link text-base",
         "lg:group-hover/link:cursor-pointer"
       )}
     >
       <div className="z-10 sm:col-span-6">
-        <h3 className="leading-snug text-slate-200 lg:group-hover/root:text-teal-300">
+        <h3 className="leading-snug text-link lg:group-hover/root:text-link-hover">
           <span className="text-md flex">
             {title}
             <ArrowUpRightSquare
@@ -34,9 +34,9 @@ export function Content({ children, subtitle, title, link }: ContentProps) {
               className="inline-block pl-1 self-center group-hover/link:self-start"
             />
           </span>
-          <div className="text-slate-500 font-common">{subtitle}</div>
+          <div className="text-content-1 font-common">{subtitle}</div>
         </h3>
-        {/* <p className="mt-2 text-sm leading-normal text-slate-400">{children}</p> */}
+        {/* <p className="mt-2 text-sm leading-normal text-content-2">{children}</p> */}
         {children}
       </div>
     </a>

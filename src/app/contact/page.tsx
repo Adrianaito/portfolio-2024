@@ -9,7 +9,7 @@ export default function Contact() {
       // initial={{ height: 0, opacity: 0 }}
       // animate={{ opacity: 1, height: "100%" }}
       transition={{ duration: 0.5, easy: "easeOut", delay: 0 }}
-      className="flex flex-col items-start justify-center w-full absolute left:0 lg:left-28 top-0 ml-auto min-h-screen bg-slate-900/75 overflow-hidden"
+      className="flex flex-col items-start justify-center w-full absolute left:0 lg:left-28 top-0 ml-auto min-h-screen bg-background/75 overflow-hidden"
     >
       <div className="mx-10 mt-24 mb-10 lg:m-24 overflow-hidden">
         <m.h1

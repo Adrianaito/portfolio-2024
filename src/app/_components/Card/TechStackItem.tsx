@@ -11,13 +11,13 @@ export function TechStackItem({ name }: TechStackItemProps) {
           "flex",
           "items-center",
           "rounded-full",
-          "bg-teal-400/10",
+          "bg-background-hover/10",
           "px-3",
           "py-1",
           "font-common",
           "text-xs",
           "leading-5",
-          "text-teal-300"
+          "text-link-hover"
         )}
       >
         {name}

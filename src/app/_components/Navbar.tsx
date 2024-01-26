@@ -23,17 +23,18 @@ export default function Navbar() {
           "justify-between",
           "items-center",
           "uppercase",
-          "text-foreground-pink",
+          // "text-foreground-pink",
           "tracking-widest",
           "h-16",
           "w-screen",
-          "bg-gray-950",
+          // "bg-gray-950",
+          "bg-background",
           "p-6",
           "z-50",
           "relative",
           "border-b-2",
-          "border-foreground-pink",
-          "text-teal-400",
+          "border-border",
+          "text-background-hover",
           "tracking-widest",
           "lg:content-between",
           "lg:justify-end",
@@ -91,7 +92,7 @@ export default function Navbar() {
           </ul>
           <div
             className={cn(
-              "lg:w-[0.5px] lg:bg-teal-400 lg:h-[100px] lg:self-center",
+              "lg:w-[0.5px] lg:bg-background-hover lg:h-[100px] lg:self-center",
               {
                 "lg:mr-5": pathname !== "/",
               }

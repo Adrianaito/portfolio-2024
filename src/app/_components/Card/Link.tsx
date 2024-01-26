@@ -17,7 +17,7 @@ export function CardLink({
 }: ContentLinkProps) {
   return (
     <div className="z-10 sm:col-span-6 group/link-bottom mt-4">
-      <div className="leading-snug text-slate-200 ">
+      <div className="leading-snug text-link ">
         <a
           href={link}
           target="_blank"
@@ -28,8 +28,8 @@ export function CardLink({
             "items-baseline",
             "font-common",
             "leading-tight",
-            "text-slate-200",
-            "lg:group-hover/link-bottom:text-teal-300",
+            "text-link",
+            "lg:group-hover/link-bottom:text-link-hover",
             className
           )}
         >

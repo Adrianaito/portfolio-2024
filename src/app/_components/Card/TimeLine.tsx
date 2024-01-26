@@ -17,7 +17,7 @@ export function TimeLine({ start, end }: TimeLineProps) {
         "font-ms-dos",
         "uppercase",
         "tracking-wide",
-        "text-slate-400",
+        "text-content-2",
         "sm:col-span-2"
       )}
     >

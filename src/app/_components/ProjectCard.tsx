@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           <Card.Content subtitle="" title={project.name} link={project.link}>
             {project.description.map((desc, index) => (
               <p
-                className="mt-2 text-sm font-common leading-normal text-slate-400"
+                className="mt-2 text-sm font-common leading-normal text-content-2"
                 key={index}
               >
                 {desc}

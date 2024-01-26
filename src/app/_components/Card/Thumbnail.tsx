@@ -18,7 +18,7 @@ export function Thumbnail({ src, alt }: ThumbnailProps) {
         "font-ms-dos",
         "uppercase",
         "tracking-wide",
-        "text-slate-400",
+        "text-content-2",
         "sm:col-span-2",
         "flex",
         "items-center"
