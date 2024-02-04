@@ -1,10 +1,12 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 export const experiences = [
   {
     company: "Matinno",
-    link: "https://www.matinno.co/",
+    companyLink: "https://www.matinno.co/",
     position: "Software Engineer",
     startDate: "2024",
     endDate: "Present",
+    extLinks: [{ link: "https://www.matinno.co/", title: "Matinno" }],
     techStack: ["React", "Typescript", "NextJS", "Postgres", "Python", "Flask"],
     description: [
       `As the Tech Lead for Backend Development at Matinno, a pioneering sustainable materials platform, I spearhead the engineering efforts to architect, develop, and deploy scalable and robust backend services. My role is instrumental in driving the platform's mission of reducing waste, enhancing design carbon accounting, and facilitating the recycling and upcycling of materials through technology. Leveraging my expertise in Flask, Python, and PostgreSQL, I have led my team in creating a high-performance API ecosystem that supports a wide array of functionalities, from material data management to user authentication and transaction processing.`,
@@ -15,10 +17,14 @@ export const experiences = [
   },
   {
     company: "SIVENTH",
-    link: "https://www.siventh.com/",
+    companyLink: "https://www.siventh.com/",
     position: "Software Engineer",
     startDate: "2022",
     endDate: "2024",
+    extLinks: [
+      { link: "https://siventh.com/missus", title: "Missus" },
+      { link: "https://siventh.com/csraas", title: "CSRAAS" },
+    ],
     techStack: ["React", "Typescript", "Postgres", "Python", "Flask", "AWS"],
     description: [
       `As a Software Developer at SIVENTH, I played a pivotal role in the development of an innovative supply chain analysis tool designed to enhance sustainability across various industries.`,
@@ -33,7 +39,7 @@ export const experiences = [
   },
   {
     company: "AVC",
-    link: "https://www.avc-calendar.app/",
+    companyLink: "https://www.avc-calendar.app/",
     position: "Software Engineer (volunteer)",
     startDate: "2022",
     endDate: "Present",
@@ -45,7 +51,7 @@ export const experiences = [
   },
   {
     company: "SBWorks",
-    link: "https://www.sbworks.jp/",
+    companyLink: "https://www.sbworks.jp/",
     position: "Software Engineer",
     startDate: "2021",
     endDate: "2022",
