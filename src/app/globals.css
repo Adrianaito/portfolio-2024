@@ -2,26 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground: 191 82% 6%;
+    --foreground-pink: 223 51% 85%;
+    /* --foreground-pink: 359 50% 60%; */
+    --background-pink: 224 59% 16%;
+    /* --background-pink: 5 92% 95%; */
+    --green-ms-dos: 119 99% 33%;
+    /* --green-ms-dos: 122 97% 26%; */
+    --black: 0 0% 1%;
+    --dark-blue: 224 59% 16%;
+    --teal-300: 171 77% 64%;
+    --slate-600: 215 19% 35%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  body {
+    @apply bg-gray-950 text-foreground-pink;
+  }
+  [data-nextjs-scroll-focus-boundary] {
+    display: contents;
+  }
 }
