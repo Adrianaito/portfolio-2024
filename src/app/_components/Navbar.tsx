@@ -1,48 +1,106 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion as m } from "framer-motion";
+import { cn } from "../_lib/utils";
+import { navItems } from "@/data/menuItems";
 
-export default function Navbar({ children }: { children: React.ReactNode }) {
+export default function Navbar() {
   const pathname = usePathname();
+
   return (
-    <div className="h-screen flex">
-      <nav className="flex items-center justify-between h-screen w-28 flex-wrap bg-gray-800 p-6 z-20 relative">
-        <ul className="flex flex-col gap-20">
-          {pathname !== "/" ? (
-            <Link
-              href="/"
-              className="-rotate-90 hover:underline cursor-default"
-            >
-              <li>home</li>
-            </Link>
-          ) : (
-            <>
-              <a
-                href="https://www.linkedin.com/in/adriana-ito/"
-                target="_blank"
-                className="-rotate-90 hover:underline cursor-default"
-              >
-                <li>linkedin</li>
-              </a>
-              <a
-                href="https://github.com/Adrianaito"
-                target="_blank"
-                className="-rotate-90 hover:underline cursor-default"
-              >
-                <li>github</li>
-              </a>
-              <a
-                href="mailto:ito.dri@gmail.com"
-                className="-rotate-90 hover:underline cursor-default"
-              >
-                <li>email</li>
-              </a>
-            </>
-          )}
-        </ul>
-        <span className="-rotate-90">© / 2023</span>
+    <m.div
+      initial={{ y: "100%" }}
+      // initial={pathname == "/contact" ? { y: "1000%" } : { y: "100%" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 0.75, easy: "easeOut", delay: 0.5 }}
+      className="lg:h-screen flex flex-col lg:flex-row font-common font-bold text-sm z-10 fixed top-0 left-0"
+    >
+      <nav
+        className={cn(
+          "flex",
+          "flex-wrap",
+          "justify-between",
+          "items-center",
+          "uppercase",
+          "text-foreground-pink",
+          "tracking-widest",
+          "h-16",
+          "w-screen",
+          "bg-gray-950",
+          "p-6",
+          "z-50",
+          "relative",
+          "border-b-2",
+          "border-foreground-pink",
+          "text-teal-400",
+          "tracking-widest",
+          "lg:content-between",
+          "lg:justify-end",
+          "lg:pr-0",
+          "lg:h-screen",
+          "lg:w-28",
+          "lg:border-b-0",
+          "lg:border-r-2"
+        )}
+      >
+        <div
+          className={cn("lg:flex lg:flex-col gap-14", {
+            "lg:gap-24": pathname == "/",
+          })}
+        >
+          <ul className={cn("flex gap-5 lg:flex-col lg:gap-20 lg:mt-10", {})}>
+            {pathname !== "/" ? (
+              <>
+                <Link
+                  href="/"
+                  className="lg:-rotate-90 hover:underline cursor-default lg:pb-5"
+                >
+                  <li>home</li>
+                </Link>
+              </>
+            ) : (
+              <>
+                <a
+                  href="https://www.linkedin.com/in/adriana-ito/"
+                  target="_blank"
+                  className="lg:-rotate-90 hover:underline hover:text-white cursor-default"
+                >
+                  <li>linkedin</li>
+                </a>
+                <a
+                  href="https://github.com/Adrianaito"
+                  target="_blank"
+                  className="lg:-rotate-90 hover:underline hover:text-white cursor-default"
+                >
+                  <li>github</li>
+                </a>
+                <a
+                  href="mailto:ito.dri@gmail.com"
+                  className="lg:-rotate-90 hover:underline hover:text-white cursor-default"
+                >
+                  <li>email</li>
+                </a>
+                {navItems.map((item) => (
+                  <Link href={item.href} key={item.href} className="lg:hidden">
+                    <li>{item.name}</li>
+                  </Link>
+                ))}
+              </>
+            )}
+          </ul>
+          <div
+            className={cn(
+              "lg:w-[0.5px] lg:bg-teal-400 lg:h-[100px] lg:self-center",
+              {
+                "lg:mr-5": pathname !== "/",
+              }
+            )}
+          ></div>
+        </div>
+        <span className="lg:-rotate-90 lg:pb-5 lg:mb-5">©/2024</span>
       </nav>
-      {children}
-    </div>
+      {/* {children} */}
+    </m.div>
   );
 }
