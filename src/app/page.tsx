@@ -1,48 +1,155 @@
 "use client";
 import Link from "next/link";
+import { useRef } from "react";
 import { motion as m } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import { cn } from "./_lib/utils";
+import { navItems } from "@/data/menuItems";
+import { aboutParagraphs } from "@/data/about";
+import MenuList from "./_components/MenuList";
+import ExperienceList from "./_components/ExperienceList";
+import Navbar from "./_components/Navbar";
 
 export default function Home() {
+  const scrollContainer = useRef(null);
+
   return (
-    <AnimatePresence>
-      <main className="flex h-full w-screen flex-col items-center justify-between">
-        <m.div
+    <>
+      {/* <Navbar /> */}
+      <AnimatePresence>
+        <m.main
           initial={{ height: 0, opacity: 0 }}
           animate={{ opacity: 1, height: "100%" }}
-          transition={{ duration: 1, easy: "easeIn", delay: 0.5 }}
-          className="flex flex-row justify-between items-center w-full h-full px-20"
+          transition={{ duration: 0.75, easy: "easeIn", delay: 0.5 }}
+          className="flex h-full w-screen w-[calc(100% - 7rem)] flex-col items-center justify-between -z-10"
         >
-          <div className="pl-24 font-montserrat">
-            <div>
-              <h1 className="text-2xl uppercase">Adriana Ito</h1>
-              <p>Fullstack Web Developer</p>
-              <p></p>
+          <m.div
+            className={cn(
+              "mx-auto",
+              "min-h-screen",
+              "max-w-screen-xl",
+              "px-6",
+              "py-12",
+              "md:px-12",
+              "md:py-20",
+              "lg:pr-24",
+              "lg:pl-32",
+              "lg:py-0"
+            )}
+          >
+            <div className="lg:flex lg:justify-between lg:gap-14">
+              <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+                <div className="w-2/3">
+                  <h1 className="text-4xl tracking-wider font-main-title text-slate-300 uppercase pb-4 font-bold">
+                    Adriana Ito
+                  </h1>
+                  <p className="text-lg pb-3 text-slate-300 font-common">
+                    Fullstack Web Developer
+                  </p>
+                  <p className="text-lg text-slate-500 font-common">
+                    Currently developing full-time for
+                  </p>
+                  <p className="text-lg text-slate-500">
+                    <a
+                      href="https://www.matinno.co/"
+                      target="_blank"
+                      className="hover:underline text-teal-300 hover:text-white font-common"
+                    >
+                      Matinno.
+                    </a>{" "}
+                  </p>
+                </div>
+                <MenuList navItems={navItems} />
+              </div>
+              <div
+                id="content"
+                className="pt-24 lg:w-1/2 lg:py-24"
+                ref={scrollContainer}
+              >
+                <section
+                  id="about"
+                  className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-slate-500"
+                >
+                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                    <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+                      About
+                    </h2>
+                  </div>
+                  <div>
+                    {aboutParagraphs.map((paragraph: any, index) => (
+                      <p key={index} className="mb-4 font-common">
+                        {paragraph.content}
+                      </p>
+                    ))}
+                  </div>
+                </section>
+                <section
+                  id="experience"
+                  className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                >
+                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                    <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+                      Experience
+                    </h2>
+                  </div>
+                  <div>
+                    <ExperienceList />
+                  </div>
+                </section>
+                <section
+                  id="projects"
+                  className="section-projects h-[1000px]mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                >
+                  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                    <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+                      Projects
+                    </h2>
+                  </div>
+                  <div>
+                    <ul>
+                      <li className="mb-12">
+                        <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                          <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                          <div className="z-10 sm:order-2 sm:col-span-6">
+                            <h3>
+                              <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base">
+                                <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                                <span>
+                                  outro span
+                                  <span className="inline-block">App</span>
+                                </span>
+                              </a>
+                            </h3>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="mb-12"></li>
+                      <li className="mb-12"></li>
+                      <li className="mb-12"></li>
+                    </ul>
+                    <div></div>
+                  </div>
+                </section>
+                {/* <Link href="/" className="font-sans">
+                <p className="text-6xl hover:italic text-left pb-4 lg:text-[12rem] lg:pb-10">
+                  Work
+                </p>
+              </Link>
+              <Link href="/" className="font-sans">
+                <p className="text-6xl hover:italic text-left pb-4 lg:text-[12rem] lg:pb-10">
+                  About
+                </p>
+              </Link>
+              <Link href="/contact" className="font-sans">
+                <p className="text-6xl hover:italic text-left lg:text-[12rem]">
+                  Contact
+                </p>
+              </Link> */}
+              </div>
             </div>
-            <div>
-              <p>Currently working full-time as a Web Developer</p>
-              <p>at Matinno</p>
-            </div>
-          </div>
-          <div className="pr-24">
-            <Link href="/" className="font-sans font-bold">
-              <p className="text-6xl hover:italic text-left lg:text-9xl pb-10">
-                Work
-              </p>
-            </Link>
-            <Link href="/" className="font-sans font-bold">
-              <p className="text-6xl hover:italic text-left lg:text-9xl pb-10">
-                About
-              </p>
-            </Link>
-            <Link href="/contact" className="font-sans font-bold">
-              <p className="text-6xl hover:italic text-left lg:text-9xl pb-10">
-                Contact
-              </p>
-            </Link>
-          </div>
-        </m.div>
-      </main>
-    </AnimatePresence>
+          </m.div>
+        </m.main>
+      </AnimatePresence>
+    </>
   );
 }
