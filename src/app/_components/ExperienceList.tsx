@@ -1,14 +1,14 @@
-import { ExperienceCard } from "./Card";
+import { Card } from "./Card";
 import { experience } from "@/data/experience";
 
 export default function ExperienceList() {
   return (
     <>
       {experience.map((exp, index) => (
-        <ExperienceCard.Root key={index}>
-          <ExperienceCard.TimeLine start={exp.startDate} end={exp.endDate} />
-          <ExperienceCard.TechStackContentContainer>
-            <ExperienceCard.Content
+        <Card.Root key={index}>
+          <Card.TimeLine start={exp.startDate} end={exp.endDate} />
+          <Card.TechStackContentContainer>
+            <Card.Content
               subtitle={exp.position}
               title={exp.company}
               link={exp.link}
@@ -21,14 +21,14 @@ export default function ExperienceList() {
                   {desc}
                 </p>
               ))}
-            </ExperienceCard.Content>
-            <ExperienceCard.TechStack>
+            </Card.Content>
+            <Card.TechStack>
               {exp.techStack.map((tech) => (
-                <ExperienceCard.TechStackItem key={tech} name={tech} />
+                <Card.TechStackItem key={tech} name={tech} />
               ))}
-            </ExperienceCard.TechStack>
-          </ExperienceCard.TechStackContentContainer>
-        </ExperienceCard.Root>
+            </Card.TechStack>
+          </Card.TechStackContentContainer>
+        </Card.Root>
       ))}
     </>
   );

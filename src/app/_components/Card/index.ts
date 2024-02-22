@@ -5,7 +5,7 @@ import { TechStackItem } from "./TechStackItem";
 import { Content } from "./Content";
 import { TechStackContentContainer } from "./TechStackContentContainer";
 
-export const ExperienceCard = {
+export const Card = {
   Root: CardRoot,
   TimeLine: TimeLine,
   TechStackContentContainer: TechStackContentContainer,
