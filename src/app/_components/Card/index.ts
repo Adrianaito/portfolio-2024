@@ -4,6 +4,7 @@ import { TechStack } from "./TechStack";
 import { TechStackItem } from "./TechStackItem";
 import { Content } from "./Content";
 import { TechStackContentContainer } from "./TechStackContentContainer";
+import { Thumbnail } from "./Thumbnail";
 
 export const Card = {
   Root: CardRoot,
@@ -12,4 +13,5 @@ export const Card = {
   TechStack: TechStack,
   TechStackItem: TechStackItem,
   Content: Content,
+  Thumbnail: Thumbnail,
 };
