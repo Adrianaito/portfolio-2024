@@ -6,7 +6,7 @@ import { cn } from "./_lib/utils";
 import { navItems } from "@/data/menuItems";
 import { aboutParagraphs } from "@/data/about";
 import MenuList from "./_components/MenuList";
-import ExperienceList from "./_components/ExperienceList";
+import ExperienceCard from "./_components/ExperienceCard";
 import ProjectCard from "./_components/ProjectCard";
 import { projects } from "@/data/projects";
 import { experiences } from "@/data/experience";
@@ -95,7 +95,7 @@ export default function Home() {
                   </div>
                   <div>
                     {experiences.map((exp, index) => (
-                      <ExperienceList key={index} experience={exp} />
+                      <ExperienceCard key={index} experience={exp} />
                     ))}
                   </div>
                 </section>

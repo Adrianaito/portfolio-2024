@@ -10,7 +10,7 @@ type ExperienceCardProps = {
   techStack: string[];
 };
 
-export default function ExperienceList({
+export default function ExperienceCard({
   experience,
 }: {
   experience: ExperienceCardProps;
