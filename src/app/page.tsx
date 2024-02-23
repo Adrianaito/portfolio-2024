@@ -30,7 +30,7 @@ export default function Home() {
               "min-h-screen",
               "max-w-screen-xl",
               "px-6",
-              "py-12",
+              "py-20",
               "md:px-12",
               "md:py-20",
               "lg:pr-24",
