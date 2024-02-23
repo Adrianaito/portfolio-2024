@@ -1,0 +1,56 @@
+export const experience = [
+  {
+    company: "Sutrix",
+    link: "https://www.sutrix.com/",
+    position: "Software Engineer",
+    startDate: "2024",
+    endDate: "Present",
+    techStack: ["Javascript", "SCSS", "AEM", "Python", "Django"],
+    description: [
+      `I work as a Frontend Developer at Matinno. I am responsible for building and maintaining the user interface of the company's web applications. I also work closely with the design team to implement the UI/UX designs.`,
+    ],
+  },
+  {
+    company: "Matinno",
+    link: "https://www.matinno.co/",
+    position: "Software Engineer (FreeLance)",
+    startDate: "2024",
+    endDate: "Present",
+    techStack: ["React", "Typescript", "NextJS", "Postgres", "Python", "Flask"],
+    description: [
+      `I work as a Frontend Developer at Matinno. I am responsible for building and maintaining the user interface of the company's web applications. I also work closely with the design team to implement the UI/UX designs.`,
+    ],
+  },
+  {
+    company: "SIVENTH",
+    link: "https://www.siventh.com/",
+    position: "Software Engineer",
+    startDate: "2022",
+    endDate: "2024",
+    techStack: ["React", "Typescript", "Postgres", "Python", "Flask", "AWS"],
+    description: [
+      `As a Software Developer at SIVENTH, I played a pivotal role in the development of an innovative supply chain analysis tool designed to enhance sustainability across various industries.`,
+      `Spearheaded the creation of robust backend APIs using Python with the Flask framework, ensuring seamless data handling and efficient system functionality.`,
+      `Utilized PostgreSQL for database needs, hosted on AWS RDS, to manage extensive user data and analytical metrics securely and efficiently.`,
+      `Actively contributed to the frontend development using React, creating an intuitive and responsive user interface that seamlessly integrates with backend services.`,
+    ],
+  },
+  {
+    company: "AVC",
+    link: "https://www.avc-calendar.app/",
+    position: "Software Engineer (volunteer)",
+    startDate: "2022",
+    endDate: "Present",
+    techStack: ["Ruby", "Javascript", "Postgres", "Rails"],
+    description: [`Description`],
+  },
+  {
+    company: "SBWorks",
+    link: "https://www.sbworks.jp/",
+    position: "Software Engineer",
+    startDate: "2021",
+    endDate: "2022",
+    techStack: ["React", "NextJS", "MySQL", "Flask", "Python"],
+    description: [`Description`],
+  },
+];
