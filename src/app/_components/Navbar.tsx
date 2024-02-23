@@ -81,11 +81,11 @@ export default function Navbar() {
                 >
                   <li>email</li>
                 </a>
-                {navItems.map((item) => (
+                {/* {navItems.map((item) => (
                   <Link href={item.href} key={item.href} className="lg:hidden">
                     <li>{item.name}</li>
                   </Link>
-                ))}
+                ))} */}
               </>
             )}
           </ul>
