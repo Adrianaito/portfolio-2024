@@ -6,5 +6,6 @@ export const projects = [
     ],
     techStack: ["React", "TypeScript", "Tailwind CSS"],
     link: "/projects/1",
+    thumbnail: "/napBuddies/search.png",
   },
 ];

@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useRef } from "react";
 import { motion as m } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
@@ -8,9 +7,9 @@ import { navItems } from "@/data/menuItems";
 import { aboutParagraphs } from "@/data/about";
 import MenuList from "./_components/MenuList";
 import ExperienceList from "./_components/ExperienceList";
-import Navbar from "./_components/Navbar";
 import ProjectCard from "./_components/ProjectCard";
 import { projects } from "@/data/projects";
+import { experiences } from "@/data/experience";
 
 export default function Home() {
   const scrollContainer = useRef(null);
@@ -95,7 +94,9 @@ export default function Home() {
                     </h2>
                   </div>
                   <div>
-                    <ExperienceList />
+                    {experiences.map((exp, index) => (
+                      <ExperienceList key={index} experience={exp} />
+                    ))}
                   </div>
                 </section>
                 <section
@@ -108,24 +109,11 @@ export default function Home() {
                     </h2>
                   </div>
                   <div>
-                    <ProjectCard projects={projects} />
+                    {projects.map((project, index) => (
+                      <ProjectCard key={index} project={project} />
+                    ))}
                   </div>
                 </section>
-                {/* <Link href="/" className="font-sans">
-                <p className="text-6xl hover:italic text-left pb-4 lg:text-[12rem] lg:pb-10">
-                  Work
-                </p>
-              </Link>
-              <Link href="/" className="font-sans">
-                <p className="text-6xl hover:italic text-left pb-4 lg:text-[12rem] lg:pb-10">
-                  About
-                </p>
-              </Link>
-              <Link href="/contact" className="font-sans">
-                <p className="text-6xl hover:italic text-left lg:text-[12rem]">
-                  Contact
-                </p>
-              </Link> */}
               </div>
             </div>
           </m.div>
