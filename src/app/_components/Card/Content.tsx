@@ -29,9 +29,10 @@ export function Content({ children, subtitle, title, link }: ContentProps) {
         <h3 className="leading-snug text-slate-200 lg:group-hover/root:text-teal-300">
           <span className="text-md flex">
             {title}
-            <span className="inline-block pl-1 self-center group-hover/link:self-start">
-              <ArrowUpRightSquare size={16} />
-            </span>
+            <ArrowUpRightSquare
+              size={16}
+              className="inline-block pl-1 self-center group-hover/link:self-start"
+            />
           </span>
           <div className="text-slate-500 font-common">{subtitle}</div>
         </h3>
