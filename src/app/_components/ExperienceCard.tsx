@@ -43,7 +43,7 @@ export default function ExperienceCard({
                   key={extLink.link}
                   link={extLink.link}
                   title={extLink.title}
-                  icon={<Link2 size={12} />}
+                  icon={<Link2 size={16} />}
                 />
               ))}
           </div>
