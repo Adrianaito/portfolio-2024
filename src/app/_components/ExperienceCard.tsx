@@ -1,4 +1,5 @@
 import { Card } from "./Card";
+import { Link2 } from "lucide-react";
 
 type ExperienceCardProps = {
   startDate: string;
@@ -42,6 +43,7 @@ export default function ExperienceCard({
                   key={extLink.link}
                   link={extLink.link}
                   title={extLink.title}
+                  icon={<Link2 size={12} />}
                 />
               ))}
           </div>

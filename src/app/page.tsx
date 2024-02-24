@@ -10,6 +10,8 @@ import ExperienceCard from "./_components/ExperienceCard";
 import ProjectCard from "./_components/ProjectCard";
 import { projects } from "@/data/projects";
 import { experiences } from "@/data/experience";
+import { Card } from "./_components/Card";
+import { Download } from "lucide-react";
 
 export default function Home() {
   const scrollContainer = useRef(null);
@@ -98,6 +100,12 @@ export default function Home() {
                       <ExperienceCard key={index} experience={exp} />
                     ))}
                   </div>
+                  <Card.CardLink
+                    title="Download Full Resume"
+                    link="/Adriana Ito resume.pdf"
+                    icon={<Download size={16} />}
+                    className="font-common underline hover:no-underline lg:group-hover/link-bottom:text-teal-300"
+                  />
                 </section>
                 <section
                   id="projects"

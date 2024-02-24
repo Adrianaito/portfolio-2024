@@ -1,12 +1,20 @@
 import { cn } from "@/app/_lib/utils";
-import { Link2 } from "lucide-react";
 
 type ContentLinkProps = {
   title: string;
   link: string | "#";
+  icon?: React.ReactNode;
+  className?: string;
+  download?: boolean;
 };
 
-export function CardLink({ title, link }: ContentLinkProps) {
+export function CardLink({
+  title,
+  link,
+  icon,
+  className,
+  download,
+}: ContentLinkProps) {
   return (
     <div className="z-10 sm:col-span-6 group/link-bottom mt-4">
       <div className="leading-snug text-slate-200 ">
@@ -14,20 +22,22 @@ export function CardLink({ title, link }: ContentLinkProps) {
           href={link}
           target="_blank"
           rel="noreferrer"
-          className={cn(
-            "inline-flex",
-            "items-baseline",
-            "font-common",
-            "leading-tight",
-            "text-slate-200",
-            "lg:group-hover/link-bottom:text-teal-300"
-          )}
+          download={download}
+          className={
+            (cn(
+              "inline-flex",
+              "items-baseline",
+              "font-common",
+              "leading-tight",
+              "text-slate-200",
+              "lg:group-hover/link-bottom:text-teal-300"
+            ),
+            className)
+          }
         >
           <span className="text-md flex">
             {title}
-            <span className="inline-block pl-1 self-center">
-              <Link2 size={12} />
-            </span>
+            <span className="inline-block pl-1 self-center">{icon}</span>
           </span>
         </a>
       </div>
