@@ -9,7 +9,7 @@ export function CardRoot({ children }: CardRootProps) {
     <div className="mb-12">
       <div
         className={cn(
-          "group",
+          "group/root",
           "relative",
           "grid",
           "pb-1",
@@ -33,9 +33,9 @@ export function CardRoot({ children }: CardRootProps) {
             "motion-reduce:transition-none",
             "lg:-inset-x-6",
             "lg:block",
-            "lg:group-hover:bg-slate-800/50",
-            "lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]",
-            "lg:group-hover:drop-shadow-lg"
+            "lg:group-hover/root:bg-slate-800/50",
+            "lg:group-hover/root:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]",
+            "lg:group-hover/root:drop-shadow-lg"
           )}
         ></div>
         {children}
