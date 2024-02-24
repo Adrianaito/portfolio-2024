@@ -23,17 +23,15 @@ export function CardLink({
           target="_blank"
           rel="noreferrer"
           download={download}
-          className={
-            (cn(
-              "inline-flex",
-              "items-baseline",
-              "font-common",
-              "leading-tight",
-              "text-slate-200",
-              "lg:group-hover/link-bottom:text-teal-300"
-            ),
-            className)
-          }
+          className={cn(
+            "inline-flex",
+            "items-baseline",
+            "font-common",
+            "leading-tight",
+            "text-slate-200",
+            "lg:group-hover/link-bottom:text-teal-300",
+            className
+          )}
         >
           <span className="text-md flex">
             {title}
