@@ -23,7 +23,6 @@ export default function Navbar() {
           "justify-between",
           "items-center",
           "uppercase",
-          // "text-foreground-pink",
           "tracking-widest",
           "h-16",
           "w-screen",
@@ -34,7 +33,7 @@ export default function Navbar() {
           "relative",
           "border-b-2",
           "border-border",
-          "text-background-hover",
+          "text-link-hover",
           "tracking-widest",
           "lg:content-between",
           "lg:justify-end",
@@ -65,20 +64,20 @@ export default function Navbar() {
                 <a
                   href="https://www.linkedin.com/in/adriana-ito/"
                   target="_blank"
-                  className="lg:-rotate-90 hover:underline hover:text-white cursor-default"
+                  className="lg:-rotate-90 hover:underline hover:text-link cursor-default"
                 >
                   <li>linkedin</li>
                 </a>
                 <a
                   href="https://github.com/Adrianaito"
                   target="_blank"
-                  className="lg:-rotate-90 hover:underline hover:text-white cursor-default"
+                  className="lg:-rotate-90 hover:underline hover:text-link cursor-default"
                 >
                   <li>github</li>
                 </a>
                 <a
                   href="mailto:ito.dri@gmail.com"
-                  className="lg:-rotate-90 hover:underline hover:text-white cursor-default"
+                  className="lg:-rotate-90 hover:underline hover:text-link cursor-default"
                 >
                   <li>email</li>
                 </a>
@@ -92,7 +91,7 @@ export default function Navbar() {
           </ul>
           <div
             className={cn(
-              "lg:w-[0.5px] lg:bg-background-hover lg:h-[100px] lg:self-center",
+              "lg:w-[0.5px] lg:bg-link-hover lg:h-[100px] lg:self-center",
               {
                 "lg:mr-5": pathname !== "/",
               }

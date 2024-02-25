@@ -9,19 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "foreground-pink": "hsl(var(--foreground-pink))",
-        foreground: "hsl(var(--foreground))",
         "green-ms-dos": "hsl(var(--green-ms-dos))",
-        black: "hsl(var(--black))",
         "dark-blue": "hsl(var(--dark-blue))",
-        "slate-600": "hsl(var(--slate-600))",
         // change
         "background-hover": "hsl(var(--teal-400))",
-        "link-hover": "hsl(var(--teal-300))",
+        // "link-hover": "hsl(var(--teal-300))",
+        "link-hover": "hsl(var(--text-secondary))",
         "main-title": "hsl(var(--blue-2))",
-        "content-1": "hsl(var(--slate-400))",
-        "content-2": "hsl(var(--slate-400))",
-        link: "hsl(var(--slate-200))",
+        "content-1": "hsl(var(--light-blue-2))",
+        "content-2": "hsl(var(--blue-3))",
+        link: "hsl(var(--blue-2))",
         background: "hsl(var(--dark-blue))",
         "background-secondary": "hsl(var(--yale-blue))",
         "text-secondary": "hsl(var(--text-secondary))",

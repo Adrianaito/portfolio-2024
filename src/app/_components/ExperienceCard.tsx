@@ -29,7 +29,7 @@ export default function ExperienceCard({
           >
             {experience.description.map((desc, index) => (
               <p
-                className="mt-2 text-sm font-common leading-normal text-content-2"
+                className="mt-2 text-md font-common leading-normal text-content-2"
                 key={index}
               >
                 {desc}

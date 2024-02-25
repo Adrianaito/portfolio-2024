@@ -15,7 +15,7 @@ export function TechStackItem({ name }: TechStackItemProps) {
           "px-3",
           "py-1",
           "font-common",
-          "text-xs",
+          "text-sm",
           "leading-5",
           "text-link-hover"
         )}

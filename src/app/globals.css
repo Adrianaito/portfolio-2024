@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-    --foreground-pink: 223 51% 85%;
     --background: 209.2 100% 7.6%;
     --oxford-blue: 209.2 100% 7.6%;
     --yale-blue: 208.8 100% 20%;
@@ -18,7 +17,6 @@
     --line-light-mode: 350 80% 55%;
     --green-ms-dos: 119 99% 33%;
     /* --green-ms-dos: 122 97% 26%; */
-    --black: 0 0% 1%;
     --dark-blue: 227.2 75.3% 15.9%;
     /* background hover and nav links */
     --teal-400: 172.5 66% 50.4%;
@@ -28,17 +26,19 @@
     /* links */
     --slate-200: 215 19% 35%;
     /* title and subtitle */
-    --blue-2: 210.4 88.8% 82.5%;
+    --blue-2: 210 90% 96.1%;
+    --blue-3: 225 39.3% 76.1%;
     /* menu, about, card subtitle */
     --gray-2: 186 8.9% 43.9%;
     /* card content and date */
-    --slate-400: 186 8.9% 56.1%;
+    --light-blue-2: 225 39.2% 60%;
+    /* --slate-400: 186 8.9% 56.1%; */
   }
 }
 
 @layer base {
   body {
-    @apply bg-background text-foreground-pink;
+    @apply bg-background;
   }
   [data-nextjs-scroll-focus-boundary] {
     display: contents;

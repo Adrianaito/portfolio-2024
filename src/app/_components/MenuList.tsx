@@ -12,7 +12,7 @@ type MenuListProps = {
 
 export default function MenuList({ navItems }: MenuListProps) {
   return (
-    <nav className="nav hidden lg:block pb-10 h-3/4 text-content-1 font-common uppercase font-bold text-sm">
+    <nav className="nav hidden lg:block pb-10 h-3/4 text-content-1 font-common uppercase font-bold text-md">
       <ul className="mt-16 w-max">
         {navItems.map((item) => (
           <li key={item.name}>
@@ -23,12 +23,11 @@ export default function MenuList({ navItems }: MenuListProps) {
                   "font-bold",
                   "uppercase",
                   "tracking-widest",
-                  "group-hover:text-green-ms-dos",
-                  "group-hover:bg-background-hover",
+                  "group-hover:bg-link-hover",
                   "group-hover:p-1",
                   "group-hover:py-0",
-                  "group-hover:text-gray-950",
-                  "group-focus-visible:green-ms-dos"
+                  "group-hover:text-gray-950"
+                  // "group-focus-visible:green-ms-dos"
                 )}
               >
                 {item.name}
