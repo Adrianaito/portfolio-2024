@@ -6,4 +6,11 @@ export const projects = [
     link: "#",
     thumbnail: "/napBuddies/search.png",
   },
+  {
+    name: "Portfolio v1",
+    description: ["My previous portfolio website."],
+    techStack: ["React", "NextJs", "MongoDB"],
+    link: "https://www.adrianaito.info/",
+    thumbnail: "/my-portfolio/my-portfolio.png",
+  },
 ];

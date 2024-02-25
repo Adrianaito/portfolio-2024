@@ -38,7 +38,7 @@
 
 @layer base {
   body {
-    @apply bg-background;
+    @apply bg-background text-main-title;
   }
   [data-nextjs-scroll-focus-boundary] {
     display: contents;
