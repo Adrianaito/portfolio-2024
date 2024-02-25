@@ -27,9 +27,9 @@ export function Thumbnail({ src, alt }: ThumbnailProps) {
       <Image
         src={src}
         alt={alt}
-        width={100}
+        width={150}
         height={100}
-        className="object-contain"
+        className="object-contain border border-text-secondary/20 rounded"
       />
     </div>
   );

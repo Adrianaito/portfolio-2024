@@ -2,9 +2,10 @@ import { cn } from "@/app/_lib/utils";
 
 interface CardRootProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-export function CardRoot({ children }: CardRootProps) {
+export function CardRoot({ children, className }: CardRootProps) {
   return (
     <div className="mb-12">
       <div
@@ -18,7 +19,8 @@ export function CardRoot({ children }: CardRootProps) {
           "sm:gap-8",
           "md:gap-4",
           "lg:hover:!opacity-100",
-          "lg:group-hover/list:opacity-50"
+          "lg:group-hover/list:opacity-50",
+          className
         )}
       >
         <div

@@ -22,7 +22,7 @@ const config: Config = {
         background: "hsl(var(--dark-blue))",
         "background-secondary": "hsl(var(--yale-blue))",
         "text-secondary": "hsl(var(--text-secondary))",
-        border: "hsl(var(--outer-space))",
+        border: "hsl(var(--light-blue-2))",
       },
       fontFamily: {
         sans: ["var(--font-unbounded)"],
