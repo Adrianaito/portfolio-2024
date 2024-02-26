@@ -45,13 +45,6 @@ export const metadata: Metadata = {
     title: "Adriana Ito",
     description: "Adriana Ito's portfolio",
     url: "https://adrianaito.com",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 800,
-        height: 600,
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
