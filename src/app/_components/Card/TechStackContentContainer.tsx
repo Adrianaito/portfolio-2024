@@ -1,7 +1,13 @@
-export function TechStackContentContainer({
-  children,
-}: {
+import { cn } from "@/app/_lib/utils";
+
+type TechStackContentContainerProps = {
   children: React.ReactNode;
-}) {
-  return <div className="z-10 sm:col-span-6">{children}</div>;
+  className?: string;
+};
+
+export function TechStackContentContainer({
+  className,
+  children,
+}: TechStackContentContainerProps) {
+  return <div className={cn("z-10 sm:col-span-6", className)}>{children}</div>;
 }

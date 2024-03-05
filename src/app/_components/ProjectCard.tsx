@@ -11,8 +11,8 @@ type Project = {
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <>
-      <Card.Root className="flex justify-between">
-        <Card.TechStackContentContainer>
+      <Card.Root className="grid-cols-8">
+        <Card.TechStackContentContainer className="sm:col-span-6">
           <Card.Content subtitle="" title={project.name} link={project.link}>
             {project.description.map((desc, index) => (
               <p
@@ -30,7 +30,11 @@ export default function ProjectCard({ project }: { project: Project }) {
           </Card.TechStack>
         </Card.TechStackContentContainer>
         {project.thumbnail && (
-          <Card.Thumbnail src={project.thumbnail} alt={project.name} />
+          <Card.Thumbnail
+            src={project.thumbnail}
+            alt={project.name}
+            className="sm:col-span-2"
+          />
         )}
       </Card.Root>
     </>
