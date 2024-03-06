@@ -23,6 +23,15 @@ export const projects = [
     thumbnail: "/missus/missus-thumb.png",
   },
   {
+    name: "Medium article",
+    description: [
+      "A simple tutorial on how to deploy and secure your static website on AWS.",
+    ],
+    techStack: ["AWS s3", "Cloudfront", "Route 53", "NextJS"],
+    link: "https://medium.com/@ito.dri/deploying-and-securing-a-static-nextjs-site-on-aws-9e2c9756cfbe",
+    thumbnail: "/medium/medium.png",
+  },
+  {
     name: "AWS static website",
     description: [
       "This website is hosted on AWS private S3 bucket and CloudFront.",
