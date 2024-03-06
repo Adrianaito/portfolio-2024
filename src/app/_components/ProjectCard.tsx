@@ -11,7 +11,7 @@ type Project = {
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <>
-      <Card.Root className="grid-cols-8">
+      <Card.Root className="sm:grid-cols-8 grid-cols-1 grid-rows-2 sm:grid-rows-1">
         <Card.TechStackContentContainer className="sm:col-span-6">
           <Card.Content subtitle="" title={project.name} link={project.link}>
             {project.description.map((desc, index) => (
