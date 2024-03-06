@@ -41,6 +41,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Adriana Ito",
   description: "Adriana Ito's portfolio",
+  icons: {
+    icon: "/hedgehog.svg",
+  },
   openGraph: {
     title: "Adriana Ito",
     description: "Adriana Ito's portfolio",
