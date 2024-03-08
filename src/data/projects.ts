@@ -23,7 +23,7 @@ export const projects = [
     thumbnail: "/missus/missus-thumb.png",
   },
   {
-    name: "Medium article",
+    name: "AWS s3 bucket + CloudFront",
     description: [
       "A simple tutorial on how to deploy and secure your static website on AWS.",
     ],
