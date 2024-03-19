@@ -7,6 +7,15 @@ export const projects = [
   //   thumbnail: "/napBuddies/search.png",
   // },
   {
+    name: "How to Beat useState Overload with useReducer",
+    description: [
+      "Simplifying State Management in React with TypeScript: From useState Chaos to useReducer Clarity.",
+    ],
+    techStack: ["React", "React Hooks"],
+    link: "https://medium.com/@ito.dri/how-to-beat-usestate-overload-with-usereducer-95140997348d",
+    thumbnail: "/medium/medium.png",
+  },
+  {
     name: "MISSUS",
     description: [
       "Matinno is a groundbreaking platform dedicated to revolutionizing the design and construction industries by promoting the use of sustainable materials.",
@@ -31,6 +40,7 @@ export const projects = [
     link: "https://medium.com/@ito.dri/deploying-and-securing-a-static-nextjs-site-on-aws-9e2c9756cfbe",
     thumbnail: "/medium/medium.png",
   },
+
   {
     name: "AWS static website",
     description: [
