@@ -25,8 +25,11 @@ export default function Contact() {
         <div className="lg-text-2xl text-lg">
           <h4>
             Email:
-            <a href="mailto:ito.dri@gmail.com" className="pl-2 hover:underline">
-              ito.dri@gmail.com
+            <a
+              href="mailto:contact@adrianaito.com"
+              className="pl-2 hover:underline"
+            >
+              contact@adrianaito.com
             </a>
           </h4>
         </div>

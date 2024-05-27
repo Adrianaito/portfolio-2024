@@ -76,7 +76,7 @@ export default function Navbar() {
                   <li>github</li>
                 </a>
                 <a
-                  href="mailto:ito.dri@gmail.com"
+                  href="mailto:contact@adrianaito.com"
                   className="lg:-rotate-90 hover:underline hover:text-link cursor-default"
                 >
                   <li>email</li>
