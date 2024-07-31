@@ -50,7 +50,7 @@ export default function Home() {
                     Fullstack Web Developer
                   </p>
                   <p className="text-lg text-content-1 font-common">
-                    Currently developing full-time for
+                    Currently freelancing at
                   </p>
                   <p className="text-lg text-content-1">
                     <a
