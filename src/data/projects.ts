@@ -1,11 +1,10 @@
 export const projects = [
-  // {
-  //   name: "Projects",
-  //   description: ["Coming soon..."],
-  //   techStack: ["React", "TypeScript", "Tailwind CSS"],
-  //   link: "#",
-  //   thumbnail: "/napBuddies/search.png",
-  // },
+  {
+    name: "Les Mots de Charlotte",
+    description: ["A headless wordpress website deployed on AWS LightSail."],
+    techStack: ["React", "TypeScript", "Tailwind CSS", "WordPress", "NextJS"],
+    link: "https://www.lesmotsdecharlotte.fr/",
+  },
   {
     name: "How to Beat useState Overload with useReducer",
     description: [
