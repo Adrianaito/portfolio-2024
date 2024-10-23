@@ -33,6 +33,27 @@ const config: Config = {
         common: ["var(--font-common)"],
         "body-font": ["var(--font-common)"],
       },
+      animation: {
+        "spin-fast": "spin 1s linear infinite",
+        "shake-fast": "shake 1s ease-in-out 59s infinite",
+        wiggle: "wiggle 0.1s ease-in-out infinite",
+      },
+      keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        shake: {
+          "0%, 1%": { transform: "translateX(0)" },
+          "10%, 30%, 50%, 70%, 90%": { transform: "translateX(-10px)" },
+          "20%, 40%, 60%, 80%": { transform: "translateX(10px)" },
+          "2%, 100%": { transform: "translateX(0)" },
+        },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-4deg)" },
+          "50%": { transform: "rotate(4deg)" },
+        },
+      },
     },
   },
   plugins: [],
