@@ -20,7 +20,7 @@ export const ModalRoot: React.FC<ModalProps> = ({
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (
         modalRef.current &&
         !modalRef.current.contains(event.target as Node)
@@ -32,14 +32,17 @@ export const ModalRoot: React.FC<ModalProps> = ({
     if (isOpen) {
       document.body.style.overflow = "hidden";
       document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("touchstart", handleClickOutside);
     } else {
       document.body.style.overflow = "";
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
     }
 
     return () => {
       document.body.style.overflow = "";
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
     };
   }, [isOpen]);
 
@@ -70,7 +73,7 @@ export const ModalRoot: React.FC<ModalProps> = ({
           >
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute w-50 h-50 p-4 text-2xl top-20 right-20 text-white hover:text-gray-500"
+              className="absolute w-50 h-50 p-4 text-2xl top-1 right-2 text-black hover:text-gray-500"
             >
               &times;
             </button>

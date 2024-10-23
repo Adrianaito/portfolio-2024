@@ -46,7 +46,7 @@ const CoffeeImage: React.FC = () => {
         "w-16",
         "h-16",
         "z-40",
-        "bottom-12",
+        "bottom-6",
         "right-5",
         "md:bottom-8",
         "md:right-8"
