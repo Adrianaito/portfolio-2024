@@ -17,6 +17,9 @@ export default function CheckoutStripe() {
   const amountInt = parseInt(amount || "500");
   const [message, setMessage] = useState<string>("Buy me a coffee");
 
+  const inputStyles =
+    "p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300";
+
   useEffect(() => {
     if (amountInt <= 500) {
       setMessage(`Buy me a ¥${amountInt} coffee`);
@@ -68,39 +71,54 @@ export default function CheckoutStripe() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="p-4 sm:p-12 w-3/4 mx-auto rounded-md my-10 text-slate-800"
+        className="mx-auto p-4 rounded-md text-slate-800 min-h-fit"
       >
         <div className="mb-3">
-          <label htmlFor="email">Your e-mail</label>
+          <label
+            htmlFor="email"
+            className="block text-left text-slate-600 font-common font-extralight"
+          >
+            Your e-mail
+          </label>
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             id="email"
-            className="p-2 w-full"
+            className={inputStyles}
             type="email"
             name="email"
             placeholder="your_best_email@email.com"
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="donator">Your name (optional)</label>
+          <label
+            htmlFor="donator"
+            className="block text-left text-slate-600 font-common font-extralight"
+          >
+            Your name (optional)
+          </label>
           <input
             value={donator}
             onChange={(e) => setDonator(e.target.value)}
             id="donator"
-            className="p-2 w-full"
+            className={inputStyles}
             type="text"
             name="donator"
             placeholder="John Doe"
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="amount">Contribution Amount (JPY)</label>
+          <label
+            htmlFor="amount"
+            className="block text-left text-slate-600 font-common font-extralight"
+          >
+            Contribution Amount (JPY)
+          </label>
           <input
             value={amount}
             onChange={(e) => setAmount(e.target.value || "500")}
             id="amount"
-            className="p-2 w-full"
+            className={inputStyles}
             type="number"
             name="amount"
             placeholder="1000"
@@ -113,7 +131,7 @@ export default function CheckoutStripe() {
         <button
           type="submit"
           disabled={!stripe || loading}
-          className="btn-primary w-full mt-4"
+          className="btn-primary w-full mt-4 text-xl md:text-2xl"
         >
           {loading ? "Loading..." : `${message}`}
         </button>
