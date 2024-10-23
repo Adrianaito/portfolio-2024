@@ -42,8 +42,8 @@ export default function Home() {
           >
             <div className="lg:flex lg:justify-between lg:gap-14">
               <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
-                <div className="w-2/3">
-                  <h1 className="text-4xl tracking-wider font-main-title text-main-title uppercase pb-4 font-bold">
+                <div className="md:w-2/3 py-10 md:py-0">
+                  <h1 className="text-4xl tracking-wider whitespace-nowrap font-main-title text-main-title uppercase pb-4 font-bold">
                     Adriana Ito
                   </h1>
                   <p className="text-lg pb-3 text-main-title font-common">
@@ -66,7 +66,7 @@ export default function Home() {
               </div>
               <div
                 id="content"
-                className="pt-24 lg:w-1/2 lg:py-24"
+                className="md:pt-24 lg:w-1/2 lg:py-24"
                 ref={scrollContainer}
               >
                 <section
