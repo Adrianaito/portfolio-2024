@@ -43,7 +43,7 @@ export const experiences = [
     company: "SBWorks",
     companyLink: "https://www.sbworks.jp/",
     position: "Software Engineer",
-    startDate: "2021",
+    startDate: "2020",
     endDate: "2022",
     techStack: ["React", "NextJS", "MySQL", "Flask", "Python"],
     description: [
