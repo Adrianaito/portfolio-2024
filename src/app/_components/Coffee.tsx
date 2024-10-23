@@ -46,7 +46,11 @@ const CoffeeImage: React.FC = () => {
         "w-16",
         "h-16",
         "z-40",
-        isCentered ? "top-left" : "bottom-right"
+        "bottom-12",
+        "right-5",
+        "md:bottom-8",
+        "md:right-8"
+        // isCentered ? "top-left" : "bottom-right"
       )}
     />
   );

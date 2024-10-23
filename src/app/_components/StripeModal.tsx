@@ -41,7 +41,7 @@ const StripeModal: React.FC = () => {
 
   return (
     <Modal.Root trigger={<CoffeeImage />}>
-      <Modal.Content className="text-center px-2 py-4 sm:p-8 bg-cream rounded-md">
+      <Modal.Content className="text-center px-2 py-4 sm:p-8 rounded-md">
         {/* Elements provider with the fetched clientSecret */}
         <Elements stripe={stripePromise} options={{ clientSecret }}>
           <CheckoutStripe />
