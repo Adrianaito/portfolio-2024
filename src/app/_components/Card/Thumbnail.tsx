@@ -30,8 +30,8 @@ export function Thumbnail({ src, alt, className }: ThumbnailProps) {
         src={src}
         alt={alt}
         width={150}
-        height={150}
-        className="object-contain border border-text-secondary/20 rounded"
+        height={100}
+        className="object-contain border border-text-secondary/20 rounded hidden md:block"
       />
     </div>
   );

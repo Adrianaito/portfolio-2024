@@ -5,7 +5,7 @@ type Project = {
   description: string[];
   techStack: string[];
   link: string;
-  thumbnail: string;
+  thumbnail?: string;
 };
 
 export default function ProjectCard({ project }: { project: Project }) {

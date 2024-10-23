@@ -12,7 +12,7 @@ export function CardRoot({ children, className }: CardRootProps) {
         className={cn(
           "group/root",
           "relative",
-          "grid",
+          "md:grid",
           "pb-1",
           "transition-all",
           "sm:grid-cols-8",
