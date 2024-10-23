@@ -3,7 +3,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Montserrat, Unbounded, VT323, Exo_2, Roboto } from "next/font/google";
 import Navbar from "./_components/Navbar";
-import CoffeeImage from "./_components/Coffee";
+import StripeModal from "./_components/StripeModal";
 
 const exo2 = Exo_2({
   subsets: ["latin"],
@@ -60,7 +60,7 @@ export default function RootLayout({
         {/* <Navbar>{children}</Navbar> */}
         <Navbar />
         {children}
-        <CoffeeImage />
+        <StripeModal />
       </body>
     </html>
   );
