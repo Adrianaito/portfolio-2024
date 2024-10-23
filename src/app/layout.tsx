@@ -1,15 +1,9 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import {
-  Montserrat,
-  Unbounded,
-  Josefin_Sans,
-  VT323,
-  Exo_2,
-  Roboto,
-} from "next/font/google";
-import Navbar from "./_components/Navbar";
 import React from "react";
+import type { Metadata } from "next";
+import { Montserrat, Unbounded, VT323, Exo_2, Roboto } from "next/font/google";
+import Navbar from "./_components/Navbar";
+import CoffeeImage from "./_components/Coffee";
 
 const exo2 = Exo_2({
   subsets: ["latin"],
@@ -66,6 +60,7 @@ export default function RootLayout({
         {/* <Navbar>{children}</Navbar> */}
         <Navbar />
         {children}
+        <CoffeeImage />
       </body>
     </html>
   );
