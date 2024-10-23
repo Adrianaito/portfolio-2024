@@ -16,7 +16,7 @@ export const projects = [
     thumbnail: "/medium/medium.png",
   },
   {
-    name: "MISSUS",
+    name: "Matinno",
     description: [
       "Matinno is a groundbreaking platform dedicated to revolutionizing the design and construction industries by promoting the use of sustainable materials.",
     ],
@@ -28,7 +28,7 @@ export const projects = [
       "Flask",
       "REST API",
     ],
-    link: "https://siventh.com/missus",
+    link: "https://www.matinno.co/en",
     thumbnail: "/missus/missus-thumb.png",
   },
   {
