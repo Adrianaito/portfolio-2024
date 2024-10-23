@@ -44,3 +44,19 @@
     display: contents;
   }
 }
+
+@layer utilities {
+  .bottom-right {
+    bottom: 3rem;
+    right: 2rem;
+    position: fixed;
+    transition: all 10s ease-in-out;
+  }
+
+  .top-left {
+    top: 3rem;
+    left: 10rem;
+    position: fixed;
+    transition: all 10s ease-in-out;
+  }
+}
