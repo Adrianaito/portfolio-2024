@@ -12,9 +12,8 @@ const StripeModal: React.FC = () => {
   );
 
   const [clientSecret, setClientSecret] = useState<string | null>(null);
-  const [amount, setAmount] = useState<string>("500"); // You can adjust this amount as needed.
+  const [amount, setAmount] = useState<string>("500");
 
-  // Fetch client secret on component mount or when amount changes
   useEffect(() => {
     const fetchClientSecret = async () => {
       if (parseInt(amount) >= 500) {
@@ -23,7 +22,7 @@ const StripeModal: React.FC = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ amount }), // Sending the amount in the request body
+          body: JSON.stringify({ amount }),
         });
 
         const data = await response.json();
@@ -34,7 +33,6 @@ const StripeModal: React.FC = () => {
     fetchClientSecret();
   }, [amount]);
 
-  // Only render the Elements provider when clientSecret is available
   if (!clientSecret) {
     return <div>Loading...</div>;
   }
@@ -42,7 +40,9 @@ const StripeModal: React.FC = () => {
   return (
     <Modal.Root trigger={<CoffeeImage />}>
       <Modal.Content className="text-center px-2 py-4 sm:p-8 rounded-md">
-        {/* Elements provider with the fetched clientSecret */}
+        <h2 className="text-2xl text-slate-800">
+          Powered by coffee, fueled by your support!
+        </h2>
         <Elements stripe={stripePromise} options={{ clientSecret }}>
           <CheckoutStripe />
         </Elements>
