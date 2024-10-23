@@ -62,19 +62,18 @@ export const ModalRoot: React.FC<ModalProps> = ({
           {triggerText}
         </button>
       )}
-      {/* <button
-        onClick={() => setIsOpen(true)}
-        className={cn("btn-primary", triggerClassName)}
-        {...rest}
-      >
-        {triggerText}
-      </button> */}
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50">
           <div
             ref={modalRef}
             className="rounded-lg p-2 w-full max-w-3xl shadow-lg relative"
           >
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute w-50 h-50 p-4 text-2xl top-20 right-20 text-white hover:text-gray-500"
+            >
+              &times;
+            </button>
             {children}
           </div>
         </div>

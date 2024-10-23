@@ -45,6 +45,7 @@ const CoffeeImage: React.FC = () => {
         "fixed",
         "w-16",
         "h-16",
+        "z-40",
         isCentered ? "top-left" : "bottom-right"
       )}
     />
