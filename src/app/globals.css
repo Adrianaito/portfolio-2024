@@ -45,6 +45,12 @@
   }
 }
 
+@layer components {
+  .btn-primary {
+    @apply inline-block text-center text-white bg-background hover:bg-background-secondary px-1 rounded text-xl sm:text-3xl py-1 cursor-pointer;
+  }
+}
+
 @layer utilities {
   .bottom-right {
     bottom: 3rem;
