@@ -4,7 +4,7 @@ export const projects = [
     description: ["A headless wordpress website deployed on AWS LightSail."],
     techStack: ["React", "TypeScript", "Tailwind CSS", "WordPress", "NextJS"],
     link: "https://www.lesmotsdecharlotte.fr/",
-    thumbnail: "",
+    thumbnail: "/lesMots/cover.png",
   },
   {
     name: "How to Beat useState Overload with useReducer",
