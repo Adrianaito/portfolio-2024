@@ -1,18 +1,18 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { cn } from "../_lib/utils";
+import { cn } from "@lib/utils";
 
 const CoffeeImage: React.FC = () => {
   const [isCentered, setIsCentered] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsCentered(!isCentered);
-    }, 60000); //1 minute
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsCentered(!isCentered);
+  //   }, 60000); //1 minute
 
-    return () => clearTimeout(timer);
-  }, [isCentered]);
+  //   return () => clearTimeout(timer);
+  // }, [isCentered]);
 
   useEffect(() => {
     const coffeeImage = document.getElementById("coffee");
