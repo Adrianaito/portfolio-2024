@@ -29,7 +29,7 @@ export const projects = [
       "REST API",
     ],
     link: "https://www.matinno.co/en",
-    thumbnail: "/missus/missus-thumb.png",
+    thumbnail: "/missus/matinno.png",
   },
   {
     name: "AWS s3 bucket + CloudFront",
