@@ -50,7 +50,7 @@ export default function Home() {
                     Fullstack Web Developer
                   </p>
                   <p className="text-lg text-content-1 font-common">
-                    Currently freelancing at
+                    Currently working at
                   </p>
                   <p className="text-lg text-content-1">
                     <a
@@ -61,6 +61,14 @@ export default function Home() {
                       Matinno.
                     </a>{" "}
                   </p>
+                  <span className="pr-2">&</span>
+                  <a
+                    href="https://investmentresearch.astrisadvisory.com/equity-research"
+                    target="_blank"
+                    className="hover:underline text-link-hover hover:text-white font-common"
+                  >
+                    Freelance.
+                  </a>
                 </div>
                 <MenuList navItems={navItems} />
               </div>

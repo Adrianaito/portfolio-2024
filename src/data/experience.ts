@@ -21,6 +21,7 @@ export const experiences = [
   },
   {
     company: "Freelance",
+    position: "Fullstack Engineer",
     companyLink: "",
     startDate: "2024",
     endDate: "Present",

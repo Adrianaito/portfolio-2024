@@ -6,7 +6,7 @@ type ExperienceCardProps = {
   endDate: string;
   position: string;
   company: string;
-  companyLink: string;
+  companyLink?: string;
   description: string[];
   techStack: string[];
   extLinks?: { link: string; title: string }[];

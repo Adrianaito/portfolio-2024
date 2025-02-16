@@ -5,7 +5,7 @@ type ContentProps = {
   children: React.ReactNode;
   subtitle: string;
   title: string;
-  link: string | "#";
+  link?: string | "#";
 };
 
 export function Content({ children, subtitle, title, link }: ContentProps) {
