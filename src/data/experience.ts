@@ -3,13 +3,30 @@ export const experiences = [
   {
     company: "Matinno",
     companyLink: "https://www.matinno.co/",
-    position: "Software Engineer (Freelance)",
+    position: "Head of Engineering & Development Team Coordinator",
+    startDate: "2023",
+    endDate: "Present",
+    techStack: [
+      "React",
+      "Typescript",
+      "NextJS",
+      "Postgres",
+      "Python",
+      "Flask",
+      "AWS",
+    ],
+    description: [
+      "Leading a development team to build a SaaS Marketplace for sustainable materials. Developed a location-based search engine using Geohash and AWS Lambda. Overseeing backend migration from DynamoDB to Flask with PostgreSQL for better data consistency and complex querying. Managing deployments on AWS EC2.",
+    ],
+  },
+  {
+    company: "Freelance",
+    position: "Full Stack Engineer",
     startDate: "2024",
     endDate: "Present",
-    techStack: ["React", "Typescript", "NextJS", "Postgres", "Python", "Flask"],
+    techStack: ["NextJS", "React", "WordPress", "HubSpot", "AEM", "GraphQL"],
     description: [
-      `At Matinno, a pioneering sustainable materials platform, I spearhead the engineering efforts to architect, develop, and deploy scalable and robust backend services.
-      Leveraging my expertise in Flask, Python, and PostgreSQL, I have led my team in creating a high-performance API ecosystem that supports a wide array of functionalities, from material data management to user authentication and transaction processing.`,
+      "Developing headless WordPress sites with Next.js and WPGraphQL for fast, SEO-optimized performance. Customizing HubSpot themes, integrating CRM workflows with HubDB. Creating custom AEM components with HTL and JavaScript for dynamic content management.",
     ],
   },
   {
@@ -18,25 +35,20 @@ export const experiences = [
     position: "Software Engineer",
     startDate: "2022",
     endDate: "2024",
-    extLinks: [
-      { link: "https://siventh.com/missus", title: "Missus" },
-      { link: "https://siventh.com/csraas", title: "CSRAAS" },
-    ],
     techStack: ["React", "Typescript", "Postgres", "Python", "Flask", "AWS"],
     description: [
-      `As a Software Engineer at SIVENTH, I played a pivotal role in the development of an innovative supply chain analysis tool designed to enhance sustainability across various industries.`,
-      `Spearheaded the creation of robust backend APIs using Python with the Flask framework, ensuring seamless data handling and efficient system functionality.`,
+      "Built and optimized backend APIs in Flask and PostgreSQL for a sustainability-focused supply chain tool. Improved API performance, integrated AWS services, and collaborated on frontend interactions.",
     ],
   },
   {
     company: "AVC",
     companyLink: "https://www.avc-calendar.app/",
-    position: "Software Engineer (volunteer)",
+    position: "Software Engineer (Volunteer)",
     startDate: "2022",
-    endDate: "Present",
+    endDate: "2023",
     techStack: ["Ruby", "Javascript", "Postgres", "Rails"],
     description: [
-      `As a Volunteer Developer for the Audio Visual Calendar (AVC), a project dedicated to supporting children on the autism spectrum, I leverage my expertise in Ruby on Rails and JavaScript to enhance and debug a platform that transforms event planning into a fun and engaging process for the children. My journey with AVC began out of admiration for its mission and my personal connection to the project's owner, a batchmate from my programming bootcamp.`,
+      "Contributed to an autism support platform, improving UI/UX and fixing bugs to enhance accessibility and reliability.",
     ],
   },
   {
@@ -47,8 +59,7 @@ export const experiences = [
     endDate: "2022",
     techStack: ["React", "NextJS", "MySQL", "Flask", "Python"],
     description: [
-      `As a software engineer at SBworks, my initial role involved the development of a Minimum Viable Product (MVP) for an accounting firm. This project was my introduction to the fast-paced and challenging world of software development, providing me with a comprehensive learning experience.`,
-      `Working closely with a senior developer, I navigated through the project's complexities, benefiting from guidance and support. This collaboration not only accelerated the development process but also enriched my problem-solving skills and technical knowledge.`,
+      "Built an MVP for an accounting platform using Next.js and Flask. Worked on HobbyLink Japan’s e-commerce platform, improving product management with Django Wagtail.",
     ],
   },
 ];
