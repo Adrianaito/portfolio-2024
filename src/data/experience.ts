@@ -4,7 +4,7 @@ export const experiences = [
     company: "Matinno",
     companyLink: "https://www.matinno.co/",
     position: "Head of Engineering & Development Team Coordinator",
-    startDate: "2023",
+    startDate: "2024",
     endDate: "Present",
     techStack: [
       "React",
@@ -21,7 +21,7 @@ export const experiences = [
   },
   {
     company: "Freelance",
-    position: "Full Stack Engineer",
+    companyLink: "",
     startDate: "2024",
     endDate: "Present",
     techStack: ["NextJS", "React", "WordPress", "HubSpot", "AEM", "GraphQL"],
@@ -34,7 +34,11 @@ export const experiences = [
     companyLink: "https://www.siventh.com/",
     position: "Software Engineer",
     startDate: "2022",
-    endDate: "2024",
+    endDate: "2023",
+    extLinks: [
+      { link: "https://siventh.com/missus", title: "Missus" },
+      { link: "https://siventh.com/csraas", title: "CSRAAS" },
+    ],
     techStack: ["React", "Typescript", "Postgres", "Python", "Flask", "AWS"],
     description: [
       "Built and optimized backend APIs in Flask and PostgreSQL for a sustainability-focused supply chain tool. Improved API performance, integrated AWS services, and collaborated on frontend interactions.",
