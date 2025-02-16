@@ -58,7 +58,7 @@ export default function Home() {
                       target="_blank"
                       className="hover:underline text-link-hover hover:text-white font-common"
                     >
-                      Matinno.
+                      Matinno
                     </a>{" "}
                   </p>
                   <span className="pr-2">&</span>
@@ -67,7 +67,7 @@ export default function Home() {
                     target="_blank"
                     className="hover:underline text-link-hover hover:text-white font-common"
                   >
-                    Freelance.
+                    Freelancing
                   </a>
                 </div>
                 <MenuList navItems={navItems} />
