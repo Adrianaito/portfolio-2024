@@ -6,7 +6,7 @@ export const projects = [
     ],
     techStack: ["NextJS", "TypeScript", "Tailwind"],
     link: "https://www.selvac.org/",
-    thumbnail: "/selvac/selvac-logo.png",
+    thumbnail: "/Selvac/selvac-logo.png",
   },
   {
     name: "Les Mots de Charlotte",
