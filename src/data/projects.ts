@@ -1,8 +1,17 @@
 export const projects = [
   {
+    name: "Selvac",
+    description: [
+      "A consultancy firm website built with Next.js, TypeScript, and Tailwind CSS, showcasing services for social impact and sustainable development in East Africa.",
+    ],
+    techStack: ["NextJS", "TypeScript", "Tailwind"],
+    link: "https://www.selvac.org/",
+    thumbnail: "/selvac/selvac-logo.png",
+  },
+  {
     name: "Les Mots de Charlotte",
     description: ["A headless wordpress website deployed on AWS LightSail."],
-    techStack: ["React", "TypeScript", "Tailwind CSS", "WordPress", "NextJS"],
+    techStack: ["React", "TypeScript", "Tailwind", "WordPress", "NextJS"],
     link: "https://www.lesmotsdecharlotte.fr/",
     thumbnail: "/lesMots/cover.png",
   },
