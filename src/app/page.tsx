@@ -47,7 +47,7 @@ export default function Home() {
                     Adriana Ito
                   </h1>
                   <p className="text-lg pb-3 text-main-title font-common">
-                    Fullstack Web Developer
+                    Software Engineer
                   </p>
                   <p className="text-lg text-content-1 font-common">
                     Currently working at
