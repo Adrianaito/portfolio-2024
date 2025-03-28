@@ -61,7 +61,7 @@ export default function Home() {
                       Matinno.
                     </a>{" "}
                   </p>
-                  <span className="pr-2">&</span>
+                  {/* <span className="pr-2">&</span> */}
                   {/* <a
                     href="https://investmentresearch.astrisadvisory.com/equity-research"
                     target="_blank"
