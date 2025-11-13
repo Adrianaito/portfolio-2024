@@ -64,20 +64,20 @@ export default function Navbar() {
                 <a
                   href="https://www.linkedin.com/in/adriana-ito/"
                   target="_blank"
-                  className="lg:-rotate-90 hover:underline hover:text-link cursor-default"
+                  className="lg:-rotate-90 hover:underline hover:text-link cursor-pointer"
                 >
                   <li>linkedin</li>
                 </a>
                 <a
                   href="https://github.com/Adrianaito"
                   target="_blank"
-                  className="lg:-rotate-90 hover:underline hover:text-link cursor-default"
+                  className="lg:-rotate-90 hover:underline hover:text-link cursor-pointer"
                 >
                   <li>github</li>
                 </a>
                 <a
                   href="mailto:contact@adrianaito.com"
-                  className="lg:-rotate-90 hover:underline hover:text-link cursor-default"
+                  className="lg:-rotate-90 hover:underline hover:text-link cursor-pointer"
                 >
                   <li>email</li>
                 </a>
