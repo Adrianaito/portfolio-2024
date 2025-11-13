@@ -4,14 +4,14 @@ export const projects = [
     description: [
       "A consultancy firm website built with Next.js, TypeScript, and Tailwind CSS, showcasing services for social impact and sustainable development in East Africa.",
     ],
-    techStack: ["NextJS", "TypeScript", "Tailwind"],
+    techStack: ["Next.js", "TypeScript", "Tailwind"],
     link: "https://www.selvac.org/",
     thumbnail: "/Selvac/selvac-logo.png",
   },
   {
     name: "Les Mots de Charlotte",
     description: ["A headless wordpress website deployed on AWS LightSail."],
-    techStack: ["React", "TypeScript", "Tailwind", "WordPress", "NextJS"],
+    techStack: ["React", "TypeScript", "Tailwind", "WordPress", "Next.js"],
     link: "https://www.lesmotsdecharlotte.fr/",
     thumbnail: "/lesMots/cover.png",
   },
@@ -45,7 +45,7 @@ export const projects = [
     description: [
       "A simple tutorial on how to deploy and secure your static website on AWS.",
     ],
-    techStack: ["AWS s3", "Cloudfront", "Route 53", "NextJS"],
+    techStack: ["AWS s3", "Cloudfront", "Route 53", "Next.js"],
     link: "https://medium.com/@ito.dri/deploying-and-securing-a-static-nextjs-site-on-aws-9e2c9756cfbe",
     thumbnail: "/medium/medium.png",
   },
@@ -62,7 +62,7 @@ export const projects = [
   {
     name: "Portfolio v1",
     description: ["My previous portfolio website."],
-    techStack: ["React", "NextJs", "MongoDB"],
+    techStack: ["React", "Next.js", "MongoDB"],
     link: "https://www.adrianaito.info/",
     thumbnail: "/my-portfolio/my-portfolio.png",
   },

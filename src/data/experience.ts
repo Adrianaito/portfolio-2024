@@ -9,7 +9,7 @@ export const experiences = [
     techStack: [
       "React",
       "Typescript",
-      "NextJS",
+      "Next.js",
       "Postgres",
       "Python",
       "Flask",
@@ -25,7 +25,7 @@ export const experiences = [
     companyLink: "",
     startDate: "2024",
     endDate: "Present",
-    techStack: ["NextJS", "React", "WordPress", "HubSpot", "AEM", "GraphQL"],
+    techStack: ["Next.js", "React", "WordPress", "HubSpot", "AEM", "GraphQL"],
     description: [
       "Developing headless WordPress sites with Next.js and WPGraphQL for fast, SEO-optimized performance. Customizing HubSpot themes, integrating CRM workflows with HubDB. Creating custom AEM components with HTL and JavaScript for dynamic content management.",
     ],
@@ -62,7 +62,7 @@ export const experiences = [
     position: "Software Engineer",
     startDate: "2020",
     endDate: "2022",
-    techStack: ["React", "NextJS", "MySQL", "Flask", "Python"],
+    techStack: ["React", "Next.js", "MySQL", "Flask", "Python"],
     description: [
       "Built an MVP for an accounting platform using Next.js and Flask. Worked on HobbyLink Japan’s e-commerce platform, improving product management with Django Wagtail.",
     ],
